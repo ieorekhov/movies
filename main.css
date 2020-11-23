@@ -1,0 +1,220 @@
+/* -------------------main rules flex--------- */
+
+body {
+    background: #ffffff;
+}
+
+div.flexboss {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #ffffff;
+}
+
+div.flex-main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* --------------------------menu------------ */
+
+div.flex-main-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+}
+
+div.flex-i {
+    /* ----------------flex----------------- */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* ------------------------------------- */
+    background: #ffffff;
+    line-height: 30px;
+    color: rgba(74, 97, 91, 0.9);
+    padding: 5px 5px 5px 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    /* ---------------border---------------- */
+    border-right: 2px solid rgba#ffffff;
+    border-top: 2px solid rgba#ffffff;
+}
+
+div.flex-itm-menu {
+    /* ----------------flex----------------- */
+    display: flex;
+    justify-content: top;
+    flex-grow: 1;
+    align-items: left;
+    flex-direction: column;
+    /* ------------------------------------- */
+    background: #ffffff;
+    font-size: 17px;
+    line-height: 25px;
+    color: rgb(63, 141, 67);
+    padding: 5px 5px 45px 5px;
+    margin-top: 1px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    /* ---------------border---------------- */
+    border-bottom: 1px solid rgba(192, 122, 57, 0.123);
+}
+
+/* ------------------------------header--------------------------- */
+
+div.flex-itm-header {
+    /* ----------------flex----------------- */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-grow: 1 1 1;
+    position: sticky;/* Липкое позиционирование */
+    top: 0;/* Положение сверху */
+    /* ----------------flex----------------- */
+    background: #ffffff;
+    font-size: 20px;
+    color: rgba(74, 97, 91, 0.9);
+    padding: 5px 5px 5px 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    /* ---------------border---------------- */
+    /* border-right: 2px solid rgba(192, 122, 57, 0.123);
+    border-top: 2px solid rgba(192, 122, 57, 0.123); */
+}
+
+section.main-name {
+    /* ----------------flex----------------- */
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+
+    /* ------------------------------------- */
+    /* font-family: 'Fredericka the Great'; */
+    text-transform: uppercase;
+    font-size: 50px;
+    color: rgba(74, 97, 91, 0.9);
+    padding: 5px 5px 5px 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    height: 80px;
+}
+
+section.logo {
+    /* ----------------flex----------------- */
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    align-items: center;
+    /* ------------------------------------- */
+    font-size: 30px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    height: 80px;
+}
+
+div.flex-itm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: #ffffff;
+    font-size: 20px;
+    line-height: 25px;
+    color: rgba(74, 97, 91, 0.9);
+    padding: 5px 5px 5px 5px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    /* ---------------border---------------- */
+    /* border-right: 2px solid rgba(192, 122, 57, 0.123);
+    border-top: 2px solid rgba(192, 122, 57, 0.123); */
+}
+
+/* -----------------------main part---------------------------- */
+
+/*-------------------------------------------------- paragraphs */
+
+p {
+    font-family: 'Calibri';
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    border-bottom: 1px solid rgba(192, 122, 57, 0.123);
+}
+
+b {
+    /* yes,1000,yes ... */
+    font-family: 'Calibri';
+    color: rgb(57, 127, 192);
+    text-transform: uppercase;
+}
+
+li {
+    color: rgb(192, 122, 57);
+}
+
+i {
+    color: rgb(63, 141, 67);
+}
+
+code {
+    color: rgba(0, 0, 0, 0.589);
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+}
+
+a {
+    /* font-family: 'Calibri'; */
+    text-decoration: none;
+    color: rgb(63, 141, 67);
+    border: none;
+    font-style: italic;
+}
+
+a:hover {
+    color: rgb(182, 45, 45);
+}
+
+/* ----------------class-------------------------------- */
+
+string.chapter {
+    color: teal;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+string.chapter-itm {
+    
+    color: rgb(192, 122, 57);
+    font-family: 'Fira Code', monospace;
+    font-size: 16px;
+}
+
+p.chapter-main-name {
+    align-self: center; /*short underline*/
+    /* text-align:  center; */ /*long underline*/
+}
+/* ----------------------------------------------------footer */
+
+div.flex-itm-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: rgba(101, 179, 144, 0.411);
+    font-size: 20px;
+    color: rgba(74, 97, 91, 0.9);
+    /* margin: 1px 10px 1px 10px;
+    padding: 1px 10px 1px 10px; */
+}
+
+/* ------------comments--------------- */
+
+/*
+видео
+1:25 - алгоритм раскладки во флексах
+font-family: 'Fira Code', monospace;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Nunito Sans', sans-serif;
+
+*/
